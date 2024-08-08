@@ -1,0 +1,22 @@
+ To use React -> we use class components
+                  -> in class components which we have 1. state manangement 2.Life Cycle Method        
+Then later fuctional components came, -> in these we cannot use state management and life cycle method -> to use thesec features we have to redirect to class componments.
+To solve this problem we use Hook -> which basically helps users to achieve the state management and life cycle method while using the fuctional components.
+Before hooks, only class components could manage state and lifecycle events, but hooks allow functional components to do the same, making them more powerful and flexible. 
+
+-> To use first import Hooks from react.
+-> import React, { useState } from 'react';
+-> hooks can only be called inside the react function components.
+     -> function MyComponent() {
+        const [count, setCount] = useState(0);
+        This is correct.
+     -> const [count, setCount] = useState(0);
+        This is incorrect.
+-> hooks can only be called at the top level of a component.
+-> hooks can not be conditional i.e; we can not use conditional statements within it.
+-> syntax of usestate hook
+    usestate hook returns an array of 2 elements i.e; state is state variable and setState is updated function.
+    const [state, setState] = useState(initialState);
+    example: const [count, setCount] = useState(0); 
+    here, 0 is initial value of state variable state.
+
