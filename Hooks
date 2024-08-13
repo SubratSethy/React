@@ -30,8 +30,10 @@ const changename = () => {
 // console.log("val");
 // here, if we donot use useState hook if we only run the changename funtion then the displayable content on the browser will not change google chrome only get printed in the console.
 // if we want to change the text on the interface then we have to use the useState hook as we are changing the state.
-
- setMyname('google chrome');
+ let val = myname;
+ (val ==  'chrome' )?
+ setMyname('google chrome'): setMyname('chrome');
+// terinary operator.
 }
 return (
 <div>
@@ -40,4 +42,5 @@ return (
 </div>
 )
 }
+// here, basically the useState hook re-rendering the App component after value got updated.
 
