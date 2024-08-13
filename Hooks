@@ -19,4 +19,25 @@ Before hooks, only class components could manage state and lifecycle events, but
     const [state, setState] = useState(initialState);
     example: const [count, setCount] = useState(0); 
     here, 0 is initial value of state variable state.
+Example when to use UseState hook :
+-> first our task is to change a displayable text when we click on a botton.
+    import React ,{UseState} from 'react';
+    import './App.css';
+const App = () => {
+const [myname , setMyname] = useState('chrome');
+const changename = () => {
+// val = "google chrome";
+// console.log("val");
+// here, if we donot use useState hook if we only run the changename funtion then the displayable content on the browser will not change google chrome only get printed in the console.
+// if we want to change the text on the interface then we have to use the useState hook as we are changing the state.
+
+ setMyname('google chrome');
+}
+return (
+<div>
+<h1>{myname}</h1>
+<button className ="btn" onClick = {changename}> click me </button>
+</div>
+)
+}
 
