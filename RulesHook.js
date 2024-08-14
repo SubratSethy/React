@@ -19,7 +19,7 @@ const changename = () => {
 //  const [myname , setMyname] = useState('chrome');
 //} 
 // As setMyname is a function and myname is a state variable so they can be called inside the loops, conditions but hook can not be called inside the loops and conditions.
-  
+// Hooks always written above the return statement.  
 }
 return (
 <div>
