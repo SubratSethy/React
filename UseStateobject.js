@@ -13,6 +13,7 @@ const [myobject, setmyobject] = useState({ name:"AB", Age:45 , degree : "btech" 
 return (
       <div>
       <h1 className = "h1style">Name: {myobject.Name} & Age: {myobject.age}  & Degree : {myobject.degree} & Roll no : {myobject.roll no} <h1/> 
+   //myobject contain object so object data can be accessed using . example ; Name: {myobject.Name} & Age: {myobject.age}  & Degree : {myobject.degree} & Roll no : {myobject.roll no} .
       <button className ="btn" onClick={ChangeMyobject}>clear<button/>
       <div/>  
  
